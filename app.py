@@ -10,7 +10,7 @@ from sklearn.preprocessing import StandardScaler
 st.title("Machine Learning Classification Models")
 
 # Upload dataset
-uploaded_file = st.file_uploader("metrics.csv", type=["csv"])
+uploaded_file = st.file_uploader("heart_disease_uci.csv", type=["csv"])
 
 model_option = st.selectbox(
     "Select Model",
@@ -77,3 +77,4 @@ if uploaded_file:
             ax.text(j, i, cm[i, j], ha="center", va="center")
 
     st.pyplot(fig)
+
